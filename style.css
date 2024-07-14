@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Yellow: hsl(71, 73%, 54%);
+  --Gray: hsl(204, 43%, 93%);
+  --Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  color: white;
+  background-color: var(--Gray);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  max-width: 480px;
+  border-radius: 10px;
+  margin: 162px 32px;
+  box-shadow: 0px 0px 13px 7px rgba(0, 0, 0, 0.07);
+}
+
+.join {
+  padding: 28px 24px;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.join .heading {
+  font-size: 1.2rem;
+  color: var(--Cyan);
+}
+
+.join .sub-heading {
+  color: var(--Yellow);
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.join .description {
+  color: var(--Blue);
+  line-height: 1.5rem;
+}
+
+.subscribe {
+  background: var(--Cyan);
+  padding: 28px 24px;
+}
+
+.subscribe .heading {
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  padding: 1rem 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 700;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.subscribe .description {
+  padding: 0 0 2rem;
+  font-size: 0.9rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--Yellow);
+  border: none;
+  color: #fff;
+  box-shadow: 0px 0px 13px 7px rgba(0, 0, 0, 0.07);
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+}
+.btn:hover {
+  background: hsl(71, 62%, 31%);
+}
+
+.info {
+  border-radius: 0 0 10px 10px;
+  padding: 28px 24px;
+  background: var(--Cyan);
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
+}
+
+.info .heading {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.info-list {
+  list-style: none;
+  display: grid;
+  gap: 4px;
+}
+
+.info-item {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    max-width: 634px;
+  }
+
+  .join {
+    grid-column: span 2;
+    padding: 40px 40px;
+    border-radius: 10px 10px 0 0;
+  }
+  .join .heading {
+    font-size: 1.5rem;
+  }
+
+  .join .sub-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.5rem 0 1rem;
+  }
+
+  .subscribe {
+    grid-column: 1;
+    padding: 40px 40px 30px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .subscribe .heading {
+    font-size: 1.1rem;
+  }
+  .price {
+    padding: 1.1rem 0 0.6rem;
+  }
+
+  .subscribe .description {
+    font-size: 0.95rem;
+  }
+
+  .info {
+    grid-column: 2;
+    border-radius: 0 0 10px 0;
+    padding: 40px 40px 30px;
+  }
+  .info .heading {
+    padding: 0 0 1rem;
+  }
+}
