@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [(https://github.com/Y-ashbhatt/results-summary-component-main)]
-- Live Site URL: [(https://y-ashbhatt.github.io/results-summary-component-main)]
+- Solution URL: [(https://github.com/Y-ashbhatt/Single-price-grid-component)]
+- Live Site URL: [(https://y-ashbhatt.github.io/Single-price-grid-component)]
 
 ## My process
 
